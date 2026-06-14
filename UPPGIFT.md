@@ -23,6 +23,7 @@ Du bygger applikationen **från grunden**. Du får färdig speldata (`rooms.json
   - `itemToAdd` – id på det föremål man får när rummet löses (är `null` för sista rummet)
 - `items.json` – föremålen, med `id`, namn, beskrivning och bild.
 
+
 Spelaren startar med ett föremål i inventoriet (UV Light).
 
 ---
@@ -48,6 +49,7 @@ För godkänt ska följande vara uppfyllt:
 2. **Startsida** på `/` som visar en kort introduktion till spelet.
 3. **En navigation** med länkar (`Link`) till spelets olika rum.
 4. **Alla rum renderas av en och samma komponent**, som man navigerar till via en **parameter i URL:en**. Komponenten använder `useParams()` för att läsa ut vilket rum som ska visas och hämtar rätt rumsdata utifrån parametern. _(Det ska alltså inte finnas en separat hårdkodad route eller komponent per rum.)_
+
 5. **Delad state med Context:** Inventoriet hanteras med Context (`createContext` + `useContext`) så att det är tillgängligt och växer i hela applikationen, oavsett vilket rum spelaren är i.
 6. **Pussellogik:** När spelaren klickar på rätt föremål i ett rum (det som matchar rummets `itemToSolve`) markeras rummet som löst, och belöningsföremålet (`itemToAdd`) läggs till i inventoriet.
 7. **Rummet visar olika läge** beroende på om det är löst eller inte (olöst/löst bild och instruktionstext).

@@ -1,5 +1,13 @@
 import { createContext } from "react";
 
-const UserContext = createContext();
+type UserContextType = {
+  inventory: number[];
+  setInventory: React.Dispatch<React.SetStateAction<number[]>>;
 
-export default UserContext; 
+  solvedRooms: number[];
+  setSolvedRooms: React.Dispatch<React.SetStateAction<number[]>>;
+};
+
+const UserContext = createContext<UserContextType | null>(null);
+
+export default UserContext;

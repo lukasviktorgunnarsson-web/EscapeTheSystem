@@ -1,21 +1,32 @@
+import itemsData from "./data/items.json";
 import { useContext } from "react";
 import UserContext from "./UserContext";
 
 function Inventory() {
-  const { inventory } = useContext(UserContext);
+  const context = useContext(UserContext);
+
+  if (!context) return null;
+
+  const { inventory } = context;
+  console.log(inventory);
 
   return (
     <div>
       <h2>Inventory</h2>
 
       {inventory.length === 0 ? (
-        <p>Inga föremål ännu.</p>
+        <p>Inga items ännu</p>
       ) : (
-        <ul>
-          {inventory.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        inventory.map((id: number) => {
+          const item = itemsData.find(i => i.id === id);
+
+          return (
+            <p key={id}>
+              {item?.item}
+            </p>
+            
+          );
+        })
       )}
     </div>
   );

@@ -33,7 +33,7 @@ const RoomDetails = () => {
     if (itemId === room.itemToSolve) {
       setSolvedRooms([...solvedRooms, room.id]);
 
-      if (room.itemToAdd !== null && room.itemToAdd ! == undefined) {
+      if (room.itemToAdd !== null && room.itemToAdd !== undefined) {
         setInventory([...inventory, room.itemToAdd]);
       }
     }

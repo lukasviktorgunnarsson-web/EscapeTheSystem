@@ -12,3 +12,10 @@ export interface Room {
   itemToSolve: number;
   itemToAdd: number;
 }
+
+export interface Item {
+  id: number;
+  item: string;
+  description: string;
+  image: string;
+}

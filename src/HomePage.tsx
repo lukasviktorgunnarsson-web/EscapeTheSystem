@@ -6,7 +6,7 @@ const HomePage = () => {
     className="w-full min-h-screen flex flex-col items-center justify-center gap-8 p-6 text-white bg-cover bg-center relative"
     style={{ backgroundImage: "url('/bg-start.png')" }}
 >
-    <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+    <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/50" />
 
     {/* content */}
     <div className="relative z-10 flex flex-col items-center justify-center gap-8 text-center max-w-2xl">

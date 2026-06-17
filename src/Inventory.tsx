@@ -8,7 +8,7 @@ function Inventory() {
   if (!context) return null;
 
   const { inventory } = context;
-  console.log(inventory);
+  console.log("Component renderar")
 
   return (
     <div>

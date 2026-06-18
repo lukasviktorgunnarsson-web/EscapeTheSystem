@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const RoomDetails = () => {
     const navigate = useNavigate();
     const context = useContext(UserContext);
-    
+
 
 
     if (!context) {
@@ -57,9 +57,9 @@ const RoomDetails = () => {
                 alt={room.roomName}
             />
             {isLastRoom && isSolved && (
-                        <button
-                            onClick={() => navigate("/endgame")} // Ändra "/endgame" till din exakta path
-                            className="
+                <button
+                    onClick={() => navigate("/endgame")} // Ändra "/endgame" till din exakta path
+                    className="
                                 px-6 py-4
                                 bg-red-600/80
                                 hover:bg-red-600
@@ -75,10 +75,10 @@ const RoomDetails = () => {
                                 animate-pulse
                                 md:w-auto w-full
                             "
-                        >
-                            LEAVE
-                        </button>
-                    )}
+                >
+                    LEAVE
+                </button>
+            )}
 
             <div>
                 <h3>Inventory</h3>

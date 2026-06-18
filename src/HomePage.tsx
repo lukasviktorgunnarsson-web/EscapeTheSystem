@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
-       <div
-    className="w-full min-h-screen flex flex-col items-center justify-center gap-8 p-6 text-white bg-cover bg-center relative"
-    style={{ backgroundImage: "url('/bg-start.png')" }}
->
-    <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/50" />
+        <div
+            className="w-full min-h-screen flex flex-col items-center justify-center gap-8 p-6 text-white bg-cover bg-center relative"
+            style={{ backgroundImage: "url('/bg-start.png')" }}
+        >
+            <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/30 to-black/50" />
 
-    {/* content */}
-    <div className="relative z-10 flex flex-col items-center justify-center gap-8 text-center max-w-2xl">
+            {/* content */}
+            <div className="relative z-10 flex flex-col items-center justify-center gap-8 text-center max-w-2xl">
 
                 {/* Title */}
                 <h1 className="font-wallpoet text-5xl md:text-6xl tracking-[0.3em] text-gray-200 drop-shadow-[0_0_10px_rgba(255,255,255,0.08)]">
@@ -18,7 +18,7 @@ const HomePage = () => {
 
                 {/* Intro block */}
                 <div className="space-y-5 text-gray-200 leading-relaxed font-mono text-sm md:text-base">
-                    
+
                     <p className="italic text-gray-300">
                         The screen flickers. Silence follows—heavy, unnatural, as if the system is watching you.
                     </p>

@@ -79,9 +79,10 @@ const RoomDetails = () => {
                     />
 
                 </div>
+                {/* LEAVE BUTTON */}
                 {isLastRoom && isSolved && (
                     <button
-                        onClick={() => navigate("/endgame")} // Ändra "/endgame" till din exakta path
+                        onClick={() => navigate("/endgame")}
                         className="
                                 px-6 py-4
                                 bg-red-600/80

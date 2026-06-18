@@ -3,16 +3,17 @@ import { useContext } from "react";
 import roomsData from "./data/rooms.json";
 import itemsData from "./data/items.json";
 import UserContext from "./UserContext";
-import { useNavigate } from "react-router-dom";
 
 const RoomDetails = () => {
     const navigate = useNavigate();
     const context = useContext(UserContext);
     
 
+  
+  const context = useContext(UserContext);
 
     if (!context) {
-        throw new Error("UserContext is missing Provider");
+    throw new Error("UserContext is missing Provider");
     }
 
     const {

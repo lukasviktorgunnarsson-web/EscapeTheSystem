@@ -31,7 +31,7 @@ const RoomDetails = () => {
 
     const isSolved = solvedRooms.includes(room.id);
 
-    const handleUseItem = (itemId) => {
+    const handleUseItem = (itemId:number) => {
         if (isSolved) return;
 
         if (itemId === room.itemToSolve) {

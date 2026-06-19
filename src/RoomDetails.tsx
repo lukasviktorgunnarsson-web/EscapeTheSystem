@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import roomsData from "./data/rooms.json";
 import itemsData from "./data/items.json";
@@ -6,10 +6,7 @@ import UserContext from "./UserContext";
 
 const RoomDetails = () => {
     const navigate = useNavigate();
-    const context = useContext(UserContext);
     
-
-  
   const context = useContext(UserContext);
 
     if (!context) {
